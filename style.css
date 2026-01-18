@@ -211,51 +211,48 @@ h1 {
 }
 
 /* ========================
-   6. SKILLS
-   ======================== */
-/* ========================
-   6. SKILLS (Fixed Alignment)
+   6. SKILLS (FIXED ALIGNMENT)
    ======================== */
 .skills-wrapper {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 50px; /* Increased gap for cleaner look */
+    gap: 50px; /* Space between the big columns */
     width: 100%;
 }
 
 .skill-category {
     display: flex;
-    flex-direction: column; /* Stacks Title on top of Tags */
-    align-items: center;    /* Centers everything perfectly */
-    flex: 1;                /* Makes columns equal width */
-    min-width: 300px;       /* Ensures they don't get too small */
+    flex-direction: column; 
+    align-items: center;    /* This centers the Title over the buttons */
+    flex: 1;                /* Columns take equal width */
+    min-width: 300px;       /* Prevents columns from getting too skinny */
 }
 
 .skill-category h3 { 
     color: #00c6ff; 
     margin-bottom: 20px; 
     font-size: 1.2rem;
-    text-align: center;     /* Ensures title text is centered */
+    text-align: center;
 }
 
 .tags { 
     display: flex; 
     flex-wrap: wrap; 
     gap: 12px; 
-    justify-content: center; /* Centers the buttons */
-    max-width: 100%;         /* Removes the squeeze! */
+    justify-content: center; /* This centers the buttons in the column */
+    width: 100%;
 }
 
 .tags span {
     background: var(--bg-card);
     border: var(--border-glass);
-    padding: 8px 18px;       /* Slightly larger buttons */
+    padding: 10px 20px;      
     border-radius: 8px;
     font-size: 0.95rem;
     color: var(--text-secondary);
     transition: 0.3s;
-    white-space: nowrap;     /* Prevents text inside buttons from breaking */
+    white-space: nowrap;     /* KEEPS TEXT ON ONE LINE */
 }
 
 .tags span:hover { 
@@ -314,7 +311,7 @@ input, textarea {
 }
 
 input:focus, textarea:focus { outline: none; border-color: #00c6ff; }
-.full-width { width: 100%; font-size: 1rem; }
+.full-width { width: 100%; font-size: 1rem; cursor: pointer; border: none; }
 
 .contact-footer { margin-top: 20px; text-align: center; }
 .contact-footer a { color: var(--text-secondary); font-size: 1.1rem; }
