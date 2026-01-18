@@ -213,19 +213,56 @@ h1 {
 /* ========================
    6. SKILLS
    ======================== */
-.skills-wrapper { display: flex; justify-content: center; flex-wrap: wrap; gap: 40px; }
-.skill-category h3 { color: #00c6ff; margin-bottom: 15px; font-size: 1.1rem; }
-.tags { display: flex; flex-wrap: wrap; gap: 10px; max-width: 350px; justify-content: center; }
+/* ========================
+   6. SKILLS (Fixed Alignment)
+   ======================== */
+.skills-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px; /* Increased gap for cleaner look */
+    width: 100%;
+}
+
+.skill-category {
+    display: flex;
+    flex-direction: column; /* Stacks Title on top of Tags */
+    align-items: center;    /* Centers everything perfectly */
+    flex: 1;                /* Makes columns equal width */
+    min-width: 300px;       /* Ensures they don't get too small */
+}
+
+.skill-category h3 { 
+    color: #00c6ff; 
+    margin-bottom: 20px; 
+    font-size: 1.2rem;
+    text-align: center;     /* Ensures title text is centered */
+}
+
+.tags { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 12px; 
+    justify-content: center; /* Centers the buttons */
+    max-width: 100%;         /* Removes the squeeze! */
+}
+
 .tags span {
     background: var(--bg-card);
     border: var(--border-glass);
-    padding: 6px 14px;
+    padding: 8px 18px;       /* Slightly larger buttons */
     border-radius: 8px;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     color: var(--text-secondary);
     transition: 0.3s;
+    white-space: nowrap;     /* Prevents text inside buttons from breaking */
 }
-.tags span:hover { background: #00c6ff; color: white; }
+
+.tags span:hover { 
+    background: #00c6ff; 
+    color: white; 
+    transform: translateY(-3px);
+}
 
 /* ========================
    7. PROJECTS (Highlighted)
