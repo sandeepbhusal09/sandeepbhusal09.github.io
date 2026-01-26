@@ -5,22 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sandeep Bhusal | Data Science Portfolio</title>
     
-    <!-- Fonts: Poppins -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     
-    <!-- CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- BACKGROUND GLOW -->
     <div class="glow-blob blob-1"></div>
     <div class="glow-blob blob-2"></div>
 
-    <!-- NAVBAR -->
     <nav>
         <div class="nav-container">
             <a href="#" class="logo">Sandeep<span class="dot">.</span></a>
@@ -30,50 +27,48 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="#getintouch">Get in Touch</a></li>
             </ul>
             <a href="resume/Sandeep_Bhusal_Resume.pdf" class="btn-nav" target="_blank">Resume <i class="fa-solid fa-download"></i></a>
         </div>
     </nav>
 
-    <!-- HERO SECTION -->
     <section id="about" class="hero">
         <div class="container hero-content">
-            <div class="hero-text">
+            <div class="hero-text" data-aos="fade-right">
+                <span class="badge">Open to Collaboration</span>
                 <h1>Sandeep <span class="gradient-text">Bhusal</span></h1>
-                
                 <p class="tagline">Computer Engineering Student | Data Science & ML Enthusiast</p>
                 
                 <p class="bio">
                     I am a Computer Engineering undergraduate with a deep curiosity for <strong>Data Science and Machine Learning</strong>. 
                     <br><br>
-                    I enjoy exploring data, building projects with Python, and learning how AI can solve real world problems. 
+                    I enjoy exploring data, building projects with Python, and learning how AI can solve real-world problems. 
                     I am eager to grow my skills and contribute to innovative solutions in the tech world.
-                </p> <!-- FIXED: Added closing p tag here -->
+                </p>
 
                 <div class="buttons">
                     <a href="#projects" class="btn-primary">View Projects</a>
                     <a href="#getintouch" class="btn-secondary">Contact Me</a>
                 </div>
                 
-                <!-- SOCIAL LINKS -->
                 <div class="social-hero">
-                    <a href="https://github.com/sandeepbhusal09" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/sandeep-bhusal-360a72241/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://www.facebook.com/sandeep.bhusal.244941" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/__igsandeep/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="https://x.com/Sandeep64753819" target="_blank" title="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://github.com/sandeepbhusal09" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/sandeep-bhusal-360a72241/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/sandeep.bhusal.244941" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/__igsandeep/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/Sandeep64753819" target="_blank"><i class="fab fa-x-twitter"></i></a>
                 </div>
             </div>
             
-            <div class="hero-img-box">
-                <img src="images/profile.JPG" alt="Sandeep Bhusal">
+            <div class="hero-img-box" data-aos="zoom-in">
+                <div class="img-outline">
+                    <img src="images/profile.JPG" alt="Sandeep Bhusal">
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- EDUCATION SECTION -->
-    <section id="education" class="section">
+    <section id="education" class="section" data-aos="fade-up">
         <div class="container">
             <h2 class="section-title">Education</h2>
             <div class="grid">
@@ -104,51 +99,49 @@
         </div>
     </section>
 
-    <!-- SKILLS SECTION -->
-    <section id="skills" class="section">
+    <section id="skills" class="section" data-aos="fade-up">
         <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
+            <h2 class="section-title">Technical Expertise</h2>
             <div class="skills-wrapper">
                 <div class="skill-category">
-                    <h3><i class="fa-solid fa-code"></i> Programming & Web</h3>
+                    <h3><i class="fa-solid fa-code"></i> Programming</h3>
                     <div class="tags">
                         <span>Python</span><span>C</span><span>C++</span>
                         <span>HTML</span><span>CSS</span><span>MySQL</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3><i class="fa-solid fa-brain"></i> Data Science & ML</h3>
+                    <h3><i class="fa-solid fa-brain"></i> AI & Data</h3>
                     <div class="tags">
                         <span>Machine Learning</span><span>Deep Learning</span>
-                        <span>NLP</span> <!-- FIXED: Added closing span tag -->
+                        <span>NLP</span>
                     </div>
                 </div>
                 <div class="skill-category">
                     <h3><i class="fa-solid fa-users"></i> Soft Skills</h3>
                     <div class="tags">
                         <span>Problem Solving</span><span>Leadership</span>
-                        <span>Communication</span><span>Adaptability</span>
+                        <span>Communication</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- PROJECTS SECTION -->
-    <section id="projects" class="section">
+    <section id="projects" class="section" data-aos="fade-up">
         <div class="container">
-            <h2 class="section-title">Academic Projects</h2>
+            <h2 class="section-title">Featured Project</h2>
             <div class="card glass-card wide-card project-highlight">
                 <div class="project-header">
                     <h3>Duplicate Question Pair Detection</h3>
+                    <span class="tech-tag">NLP Mastery</span>
                 </div>
-                <p class="tech-stack-line">Python • Keras • Word2Vec • NLP</p>
+                <p class="tech-stack-line">Python • Keras • Word2Vec • Siamese LSTM</p>
                 <ul class="project-details">
                     <li>Developed a semantic similarity system to identify duplicate questions using the <strong>Quora Question Pairs</strong> dataset.</li>
-                    <li>Implemented a <strong>Siamese Manhattan LSTM (MaLSTM)</strong> architecture with two identical LSTM subnetworks.</li>
-                    <li>Integrated pre-trained word embeddings (Word2Vec) to enhance semantic understanding.</li>
-                    <li>Used <strong>Manhattan distance (L1 norm)</strong> to compute semantic similarity between sentence representations.</li>
-                    <li>Achieved approximately <strong>77% accuracy</strong> in detecting semantically equivalent question pairs.</li>
+                    <li>Implemented a <strong>Siamese Manhattan LSTM (MaLSTM)</strong> architecture.</li>
+                    <li>Integrated pre-trained word embeddings to enhance semantic understanding.</li>
+                    <li>Achieved approximately <strong>77% accuracy</strong> in detection.</li>
                 </ul>
                 <div class="project-actions">
                     <a href="https://github.com/sandeepbhusal09" target="_blank" class="btn-primary-small">View Code <i class="fab fa-github"></i></a>
@@ -157,8 +150,7 @@
         </div>
     </section>
 
-    <!-- EXPERIENCE SECTION -->
-    <section id="experience" class="section">
+    <section id="experience" class="section" data-aos="fade-up">
         <div class="container">
             <h2 class="section-title">Experience</h2>
             <div class="card glass-card wide-card">
@@ -170,49 +162,41 @@
                     <span class="date">Dec 2024 – Present</span>
                 </div>
                 <p class="exp-desc">
-                    <i class="fa-solid fa-check"></i> Gaining practical exposure to industry-level operational workflows.<br>
-                    <i class="fa-solid fa-check"></i> Supporting data analysis and system monitoring tasks.
+                    <i class="fa-solid fa-circle-check"></i> Gaining practical exposure to industry-level operational workflows.<br>
+                    <i class="fa-solid fa-circle-check"></i> Supporting data analysis and system monitoring tasks.
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- INTERESTS -->
-    <section class="section" style="padding-top: 0;">
-        <div class="container center-col">
-            <h2 class="section-title" style="font-size: 1.5rem; margin-bottom: 30px;">Interests & Hobbies</h2>
-            <div class="tags">
-                <span><i class="fa-solid fa-camera"></i> Photography</span>
-                <span><i class="fa-solid fa-utensils"></i> Cooking</span>
-                <span><i class="fa-solid fa-pen-nib"></i> Designing</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACT FORM SECTION -->
     <section id="getintouch" class="section">
-        <div class="container center-col">
+        <div class="container center-col" data-aos="zoom-in">
             <h2 class="section-title">Get In Touch</h2>
-            <p style="color: #a3a3a3; margin-bottom: 30px;">Send me a message and I will get back to you!</p>
-            
-            <!-- REMEMBER: Replace ACTION_URL_HERE with your Formspree link -->
             <form action="https://formspree.io/f/mkoojyyq" method="POST" class="glass-form">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <div class="input-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <textarea name="message" rows="5" placeholder="How can I help you?" required></textarea>
                 <button type="submit" class="btn-primary full-width">Send Message</button>
             </form>
-
             <div class="contact-footer">
                 <a href="mailto:sandeepbhusal09@gmail.com"><i class="fas fa-envelope"></i> sandeepbhusal09@gmail.com</a>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER -->
     <footer>
-        <p>© 2025 Sandeep Bhusal</p>
+        <p>© 2025 Sandeep Bhusal • Built with Passion</p>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+    </script>
 </body>
 </html>
