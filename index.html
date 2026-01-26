@@ -1,270 +1,291 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sandeep Bhusal | Data Science Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sandeep Bhusal — Data Science Portfolio</title>
+  <meta name="description" content="Sandeep Bhusal — Computer Engineering Student · Data Science & ML Enthusiast" />
 
-    <!-- Fonts: Poppins -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- BACKGROUND GLOW -->
-    <div class="glow-blob blob-1" aria-hidden="true"></div>
-    <div class="glow-blob blob-2" aria-hidden="true"></div>
+  <!-- BACKGROUND GLOW -->
+  <div class="glow-blob blob-1" aria-hidden="true"></div>
+  <div class="glow-blob blob-2" aria-hidden="true"></div>
 
-    <!-- NAVBAR -->
-    <nav>
-        <div class="nav-container">
-            <a href="#" class="logo">Sandeep<span class="dot">.</span></a>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#getintouch">Get in Touch</a></li>
-            </ul>
-            <a href="resume/Sandeep_Bhusal_Resume.pdf" class="btn-nav" target="_blank" rel="noopener">Resume <i class="fa-solid fa-download"></i></a>
-            <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
-                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-            </button>
+  <!-- NAVBAR -->
+  <nav aria-label="Primary Navigation">
+    <div class="nav-container container">
+      <a href="#about" class="logo">Sandeep<span class="dot">.</span></a>
+
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#getintouch">Get in Touch</a></li>
+      </ul>
+
+      <a class="btn-nav" href="resume/Sandeep_Bhusal_Resume.pdf" target="_blank" rel="noopener">Resume <i class="fa-solid fa-download"></i></a>
+    </div>
+  </nav>
+
+  <!-- HERO / ABOUT -->
+  <header id="about" class="hero section">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Hi, I'm <span class="name-gradient">Sandeep Bhusal</span></h1>
+
+        <p class="tagline">Computer Engineering Student | Data Science & ML Enthusiast</p>
+
+        <p class="bio">
+          I am a Computer Engineering undergraduate with a deep curiosity for <strong>Data Science and Machine Learning</strong>.
+          I enjoy exploring data, building projects with Python, and learning how AI can solve real world problems.
+          I am eager to grow my skills and contribute to innovative solutions in the tech world.
+        </p>
+
+        <div class="buttons">
+          <a href="#projects" class="btn-primary">View Projects</a>
+          <a href="#getintouch" class="btn-secondary">Contact Me</a>
         </div>
-    </nav>
 
-    <!-- HERO SECTION -->
-    <section id="about" class="hero">
-        <div class="container hero-content">
-            <div class="hero-text">
-                <h1>Sandeep <span class="gradient-text">Bhusal</span></h1>
-
-                <p class="tagline">Computer Engineering Student | Data Science & ML Enthusiast</p>
-
-                <p class="bio">
-                    I am a Computer Engineering undergraduate with a deep curiosity for <strong>Data Science and Machine Learning</strong>. 
-                    <br><br>
-                    I enjoy exploring data, building projects with Python, and learning how AI can solve real world problems. 
-                    I am eager to grow my skills and contribute to innovative solutions in the tech world.
-                </p>
-
-                <div class="buttons">
-                    <a href="#projects" class="btn-primary">View Projects</a>
-                    <a href="#getintouch" class="btn-secondary">Contact Me</a>
-                </div>
-
-                <!-- SOCIAL LINKS -->
-                <div class="social-hero" aria-label="social links">
-                    <a href="https://github.com/sandeepbhusal09" target="_blank" title="GitHub" rel="noopener"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/sandeep-bhusal-360a72241/" target="_blank" title="LinkedIn" rel="noopener"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://www.facebook.com/sandeep.bhusal.244941" target="_blank" title="Facebook" rel="noopener"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/__igsandeep/" target="_blank" title="Instagram" rel="noopener"><i class="fab fa-instagram"></i></a>
-                    <a href="https://x.com/Sandeep64753819" target="_blank" title="X (Twitter)" rel="noopener"><i class="fab fa-x-twitter"></i></a>
-                </div>
-            </div>
-
-            <div class="hero-img-box">
-                <!-- using the photo you said is present: images/profile.JPG -->
-                <img src="images/profile.JPG" alt="Sandeep Bhusal" class="profile-photo">
-            </div>
+        <div class="social-hero" aria-label="social links">
+          <a href="https://github.com/sandeepbhusal09" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/sandeep-bhusal-360a72241/" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://x.com/Sandeep64753819" target="_blank" rel="noopener" title="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
         </div>
-    </section>
+      </div>
 
-    <!-- EDUCATION SECTION -->
-    <section id="education" class="section">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="grid">
-                <div class="card glass-card">
-                    <div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-                    <h3>Bachelor in Computer Engineering</h3>
-                    <p class="school">Advanced College of Engineering and Management</p>
-                    <p class="location">IOE, Kalanki, Kathmandu</p>
-                    <span class="year-badge">2021 – Present</span>
-                </div>
+      <div class="hero-img-box" aria-hidden="false">
+        <!-- your photo in images/profile.JPG -->
+        <img src="images/profile.JPG" alt="Sandeep Bhusal" class="profile-photo">
+      </div>
+    </div>
+  </header>
 
-                <div class="card glass-card">
-                    <div class="card-icon"><i class="fa-solid fa-school"></i></div>
-                    <h3>School Leaving Certificate (SLC)</h3>
-                    <p class="school">Kathmandu Model Secondary School</p>
-                    <p class="location">NEB, Baghbazar, Kathmandu</p>
-                    <span class="year-badge">2021</span>
-                </div>
+  <!-- EDUCATION -->
+  <section id="education" class="section">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="grid">
+        <article class="card glass-card">
+          <div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h3>Bachelor in Computer Engineering</h3>
+          <p class="school">Advanced College of Engineering and Management</p>
+          <p class="location">IOE, Kalanki, Kathmandu</p>
+          <span class="year-badge">2021 – Present</span>
+        </article>
 
-                <div class="card glass-card">
-                    <div class="card-icon"><i class="fa-solid fa-book-open"></i></div>
-                    <h3>Secondary Education Examination (SEE)</h3>
-                    <p class="school">Tulasi Awasiya Ma. Vi.</p>
-                    <p class="location">NEB, Tulsipur, Dang</p>
-                    <span class="year-badge">2019</span>
-                </div>
-            </div>
+        <article class="card glass-card">
+          <div class="card-icon"><i class="fa-solid fa-school"></i></div>
+          <h3>School Leaving Certificate (SLC)</h3>
+          <p class="school">Kathmandu Model Secondary School</p>
+          <p class="location">NEB, Baghbazar, Kathmandu</p>
+          <span class="year-badge">2021</span>
+        </article>
+
+        <article class="card glass-card">
+          <div class="card-icon"><i class="fa-solid fa-book-open"></i></div>
+          <h3>Secondary Education Examination (SEE)</h3>
+          <p class="school">Tulasi Awasiya Ma. Vi.</p>
+          <p class="location">NEB, Tulsipur, Dang</p>
+          <span class="year-badge">2019</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECHNICAL SKILLS -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+
+      <div class="skills-wrapper">
+        <div class="skill-category">
+          <h3><i class="fa-solid fa-code"></i> Programming & Web</h3>
+          <div class="tags tech-tags">
+            <span class="skill"><i class="fab fa-python"></i> Python</span>
+
+            <!-- C logo: Font Awesome doesn't include a C brand icon, so use a small inline SVG "C" badge -->
+            <span class="skill">
+              <svg class="lang-logo" viewBox="0 0 48 48" width="18" height="18" aria-hidden="true">
+                <circle cx="24" cy="24" r="22" fill="none" stroke="currentColor" stroke-opacity="0.15" stroke-width="2"/>
+                <text x="50%" y="55%" text-anchor="middle" fill="currentColor" font-size="20" font-family="Poppins, sans-serif" font-weight="700">C</text>
+              </svg>
+              C
+            </span>
+
+            <!-- C++: use inline text-like logo -->
+            <span class="skill">
+              <svg class="lang-logo" viewBox="0 0 48 48" width="18" height="18" aria-hidden="true">
+                <circle cx="24" cy="24" r="22" fill="none" stroke="currentColor" stroke-opacity="0.15" stroke-width="2"/>
+                <text x="50%" y="48%" text-anchor="middle" fill="currentColor" font-size="16" font-family="Poppins, sans-serif" font-weight="700">C++</text>
+              </svg>
+              C++
+            </span>
+
+            <span class="skill"><i class="fab fa-html5"></i> HTML</span>
+            <span class="skill"><i class="fab fa-css3-alt"></i> CSS</span>
+            <span class="skill"><i class="fa-solid fa-database"></i> MySQL</span>
+          </div>
         </div>
-    </section>
 
-    <!-- TECHNICAL SKILLS SECTION -->
-    <section id="skills" class="section">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-wrapper">
-                <div class="skill-category">
-                    <h3><i class="fa-solid fa-code"></i> Programming & Web</h3>
-                    <div class="tags tech-tags">
-                        <span class="skill"><i class="fab fa-python"></i> Python</span>
-                        <span class="skill"><i class="fa-solid fa-code"></i> C (Programming)</span>
-                        <span class="skill"><i class="fa-solid fa-code-branch"></i> C++</span>
-                        <span class="skill"><i class="fab fa-html5"></i> HTML</span>
-                        <span class="skill"><i class="fab fa-css3-alt"></i> CSS</span>
-                        <span class="skill"><i class="fa-solid fa-database"></i> MySQL</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fa-solid fa-brain"></i> Data Science & ML</h3>
-                    <div class="tags tech-tags">
-                        <span class="skill"><i class="fa-solid fa-robot"></i> Machine Learning</span>
-                        <span class="skill"><i class="fa-solid fa-layer-group"></i> Deep Learning</span>
-                        <span class="skill"><i class="fa-solid fa-comments"></i> NLP</span>
-                        <span class="skill"><i class="fa-solid fa-cubes"></i> TensorFlow / Keras</span>
-                    </div>
-                </div>
-            </div>
+        <div class="skill-category">
+          <h3><i class="fa-solid fa-brain"></i> Data Science & ML</h3>
+          <div class="tags tech-tags">
+            <span class="skill"><i class="fa-solid fa-robot"></i> Machine Learning</span>
+            <span class="skill"><i class="fa-solid fa-layer-group"></i> Deep Learning</span>
+            <span class="skill"><i class="fa-solid fa-comments"></i> NLP</span>
+            <span class="skill"><i class="fa-solid fa-cubes"></i> TensorFlow / Keras</span>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- SOFT SKILLS (moved out of technical skills) -->
-    <section id="softskills" class="section">
-        <div class="container">
-            <h2 class="section-title">Soft Skills</h2>
-            <div class="tags" style="justify-content:center;">
-                <span class="skill"><i class="fa-solid fa-lightbulb"></i> Problem Solving</span>
-                <span class="skill"><i class="fa-solid fa-people-roof"></i> Leadership</span>
-                <span class="skill"><i class="fa-solid fa-comments"></i> Communication</span>
-                <span class="skill"><i class="fa-solid fa-sync-alt"></i> Adaptability</span>
-            </div>
+  <!-- SOFT SKILLS -->
+  <section id="softskills" class="section">
+    <div class="container">
+      <h2 class="section-title">Soft Skills</h2>
+      <div class="tags" style="justify-content:center;">
+        <span class="skill"><i class="fa-solid fa-lightbulb"></i> Problem Solving</span>
+        <span class="skill"><i class="fa-solid fa-people-roof"></i> Leadership</span>
+        <span class="skill"><i class="fa-solid fa-comments"></i> Communication</span>
+        <span class="skill"><i class="fa-solid fa-sync-alt"></i> Adaptability</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS (unchanged) -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Academic Projects</h2>
+      <div class="card glass-card wide-card project-highlight">
+        <div class="project-header">
+          <h3>Duplicate Question Pair Detection</h3>
         </div>
-    </section>
-
-    <!-- PROJECTS SECTION (only your project kept unchanged) -->
-    <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-title">Academic Projects</h2>
-            <div class="card glass-card wide-card project-highlight">
-                <div class="project-header">
-                    <h3>Duplicate Question Pair Detection</h3>
-                </div>
-                <p class="tech-stack-line">Python • Keras • Word2Vec • NLP</p>
-                <ul class="project-details">
-                    <li>Developed a semantic similarity system to identify duplicate questions using the <strong>Quora Question Pairs</strong> dataset.</li>
-                    <li>Implemented a <strong>Siamese Manhattan LSTM (MaLSTM)</strong> architecture with two identical LSTM subnetworks.</li>
-                    <li>Integrated pre-trained word embeddings (Word2Vec) to enhance semantic understanding.</li>
-                    <li>Used <strong>Manhattan distance (L1 norm)</strong> to compute semantic similarity between sentence representations.</li>
-                    <li>Achieved approximately <strong>77% accuracy</strong> in detecting semantically equivalent question pairs.</li>
-                </ul>
-                <div class="project-actions">
-                    <a href="https://github.com/sandeepbhusal09" target="_blank" class="btn-primary-small">View Code <i class="fab fa-github"></i></a>
-                </div>
-            </div>
+        <p class="tech-stack-line">Python • Keras • Word2Vec • NLP</p>
+        <ul class="project-details">
+          <li>Developed a semantic similarity system to identify duplicate questions using the <strong>Quora Question Pairs</strong> dataset.</li>
+          <li>Implemented a <strong>Siamese Manhattan LSTM (MaLSTM)</strong> architecture with two identical LSTM subnetworks.</li>
+          <li>Integrated pre-trained word embeddings (Word2Vec) to enhance semantic understanding.</li>
+          <li>Used <strong>Manhattan distance (L1 norm)</strong> to compute semantic similarity between sentence representations.</li>
+          <li>Achieved approximately <strong>77% accuracy</strong> in detecting semantically equivalent question pairs.</li>
+        </ul>
+        <div class="project-actions">
+          <a href="https://github.com/sandeepbhusal09" target="_blank" class="btn-primary-small">View Code <i class="fab fa-github"></i></a>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- EXPERIENCE SECTION -->
-    <section id="experience" class="section">
-        <div class="container">
-            <h2 class="section-title">Experience</h2>
-            <div class="card glass-card wide-card">
-                <div class="exp-header">
-                    <div>
-                        <h3>Intern – Load Dispatch Centre (LDC)</h3>
-                        <span class="company"><i class="fa-solid fa-bolt"></i> Syuchatar, Kathmandu</span>
-                    </div>
-                    <span class="date">Dec 2024 – Present</span>
-                </div>
-                <p class="exp-desc">
-                    <i class="fa-solid fa-check"></i> Gaining practical exposure to industry-level operational workflows.<br>
-                    <i class="fa-solid fa-check"></i> Supporting data analysis and system monitoring tasks.
-                </p>
-            </div>
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <div class="card glass-card wide-card">
+        <div class="exp-header">
+          <div>
+            <h3>Intern – Load Dispatch Centre (LDC)</h3>
+            <span class="company"><i class="fa-solid fa-bolt"></i> Syuchatar, Kathmandu</span>
+          </div>
+          <span class="date">Dec 2024 – Present</span>
         </div>
-    </section>
+        <p class="exp-desc">
+          <i class="fa-solid fa-check"></i> Gaining practical exposure to industry-level operational workflows.<br>
+          <i class="fa-solid fa-check"></i> Supporting data analysis and system monitoring tasks.
+        </p>
+      </div>
+    </div>
+  </section>
 
-    <!-- INTERESTS -->
-    <section class="section" style="padding-top: 0;">
-        <div class="container center-col">
-            <h2 class="section-title" style="font-size: 1.5rem; margin-bottom: 30px;">Interests & Hobbies</h2>
-            <div class="tags">
-                <span class="skill"><i class="fa-solid fa-camera"></i> Photography</span>
-                <span class="skill"><i class="fa-solid fa-utensils"></i> Cooking</span>
-                <span class="skill"><i class="fa-solid fa-pen-nib"></i> Designing</span>
-            </div>
-        </div>
-    </section>
+  <!-- INTERESTS -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container center-col">
+      <h2 class="section-title" style="font-size: 1.5rem; margin-bottom: 30px;">Interests & Hobbies</h2>
+      <div class="tags">
+        <span class="skill"><i class="fa-solid fa-camera"></i> Photography</span>
+        <span class="skill"><i class="fa-solid fa-utensils"></i> Cooking</span>
+        <span class="skill"><i class="fa-solid fa-pen-nib"></i> Designing</span>
+      </div>
+    </div>
+  </section>
 
-    <!-- CONTACT FORM SECTION -->
-    <section id="getintouch" class="section">
-        <div class="container center-col">
-            <h2 class="section-title">Get In Touch</h2>
-            <p style="color: #a3a3a3; margin-bottom: 30px;">Send me a message and I will get back to you!</p>
+  <!-- CONTACT -->
+  <section id="getintouch" class="section">
+    <div class="container center-col">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="muted" style="margin-bottom: 20px;">Send me a message — I'll get back to you shortly.</p>
 
-            <form action="https://formspree.io/f/mkoojyyq" method="POST" class="glass-form">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn-primary full-width">Send Message</button>
-            </form>
+      <form action="https://formspree.io/f/mkoojyyq" method="POST" class="glass-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn-primary full-width">Send Message</button>
+      </form>
 
-            <div class="contact-footer">
-                <a href="mailto:sandeepbhusal09@gmail.com"><i class="fas fa-envelope"></i> sandeepbhusal09@gmail.com</a>
-            </div>
-        </div>
-    </section>
+      <div class="contact-footer" style="margin-top:18px;">
+        <a href="mailto:sandeepbhusal09@gmail.com"><i class="fa-solid fa-envelope"></i> sandeepbhusal09@gmail.com</a>
+      </div>
+    </div>
+  </section>
 
-    <!-- FOOTER -->
-    <footer>
-        <div class="container" style="display:flex;justify-content:space-between;align-items:center;padding:18px 0;">
-            <p>© <span id="year"></span> Sandeep Bhusal</p>
-            <a href="#about" class="muted">Back to top</a>
-        </div>
-    </footer>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;">
+      <small>© <span id="year"></span> Sandeep Bhusal</small>
+      <div class="footer-links">
+        <a href="#about">Top</a>
+      </div>
+    </div>
+  </footer>
 
-    <script>
-        // Year
-        document.getElementById('year').textContent = new Date().getFullYear();
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
 
-        // Mobile nav toggle
-        const toggle = document.querySelector('.nav-toggle');
-        const navLinks = document.querySelector('.nav-links');
+    // Mobile nav toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
 
-        toggle.addEventListener('click', () => {
-            const expanded = toggle.getAttribute('aria-expanded') === 'true';
-            toggle.setAttribute('aria-expanded', String(!expanded));
-            navLinks.classList.toggle('open');
-        });
+    navToggle.addEventListener('click', () => {
+      const expanded = navToggle.getAttribute('aria-expanded') === 'true' || false;
+      navToggle.setAttribute('aria-expanded', !expanded);
+      navLinks.classList.toggle('open');
+    });
 
-        // Close mobile nav on link click
-        document.querySelectorAll('.nav-links a').forEach(a => {
-            a.addEventListener('click', () => {
-                navLinks.classList.remove('open');
-                toggle.setAttribute('aria-expanded', 'false');
-            });
-        });
+    // Close nav on link click (mobile)
+    navLinks.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
 
-        // Smooth scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                const targetId = this.getAttribute('href').slice(1);
-                if (!targetId) return;
-                const targetEl = document.getElementById(targetId);
-                if (!targetEl) return;
-                e.preventDefault();
-                targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            });
-        });
-    </script>
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const targetId = this.getAttribute('href').slice(1);
+        if (!targetId) return;
+        const targetEl = document.getElementById(targetId);
+        if (!targetEl) return;
+        e.preventDefault();
+        targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+  </script>
 </body>
 </html>
