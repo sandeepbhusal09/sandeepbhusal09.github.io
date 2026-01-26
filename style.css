@@ -2,7 +2,8 @@
    1. VARIABLES & RESET
    ======================== */
 :root {
-    --bg-dark: #071028;
+    --bg-top: #042033;            /* changed background (top) */
+    --bg-bottom: #071028;         /* changed background (bottom) */
     --card-glass: rgba(255,255,255,0.03);
     --accent-1: #00c6ff;
     --accent-2: #7a28cb;
@@ -19,9 +20,8 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html, body { height: 100%; }
 body {
-    background: radial-gradient(900px 500px at 10% 10%, rgba(0,198,255,0.06), transparent),
-                radial-gradient(700px 400px at 90% 90%, rgba(122,40,203,0.05), transparent),
-                var(--bg-dark);
+    /* updated background color/gradient per request */
+    background: linear-gradient(180deg, var(--bg-top), var(--bg-bottom));
     color: var(--text-main);
     font-family: var(--font-main);
     line-height: 1.6;
@@ -34,17 +34,15 @@ body {
 /* Container */
 .container { max-width: var(--container-w); margin: 0 auto; padding: 0 20px; }
 
-/* ========================
-   2. BACKGROUND BLOBS
-   ======================== */
-.glow-blob { position: fixed; width: 600px; height: 600px; border-radius: 50%; filter: blur(90px); z-index: -1; opacity: 0.28; }
-.blob-1 { top: -160px; left: -120px; background: linear-gradient(135deg, rgba(0,198,255,0.32), rgba(122,40,203,0.16)); }
-.blob-2 { bottom: -160px; right: -120px; background: linear-gradient(135deg, rgba(122,40,203,0.28), rgba(0,198,255,0.12)); }
+/* Background blobs slightly adjusted to match new bg */
+.glow-blob { position: fixed; width: 580px; height: 580px; border-radius: 50%; filter: blur(88px); z-index: -1; opacity: 0.28; }
+.blob-1 { top: -120px; left: -100px; background: linear-gradient(135deg, rgba(0,198,255,0.32), rgba(122,40,203,0.12)); }
+.blob-2 { bottom: -120px; right: -100px; background: linear-gradient(135deg, rgba(122,40,203,0.28), rgba(0,198,255,0.12)); }
 
 /* ========================
-   3. NAVBAR
+   NAVBAR
    ======================== */
-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: linear-gradient(180deg, rgba(7,16,40,0.8), rgba(7,16,40,0.4)); border-bottom: 1px solid rgba(255,255,255,0.03); backdrop-filter: blur(8px); }
+nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(5,12,26,0.6); border-bottom: 1px solid rgba(255,255,255,0.03); backdrop-filter: blur(8px); }
 .nav-container { max-width: var(--container-w); margin: 0 auto; padding: 14px 20px; display:flex; align-items:center; justify-content:space-between; gap: 16px; }
 
 /* Logo */
@@ -65,7 +63,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: lin
 .nav-toggle .bar { display:block; height: 2px; width: 20px; background: var(--text-main); margin: 4px 0; border-radius: 2px; transition: transform 200ms ease, opacity 200ms ease; }
 
 /* ========================
-   4. HERO SECTION
+   HERO SECTION
    ======================== */
 .section { padding: 72px 0; }
 .hero { min-height: calc(100vh - 120px); display:flex; align-items:center; justify-content:center; padding-bottom: 40px; }
@@ -90,11 +88,45 @@ h1 { font-size: 2.8rem; line-height: 1.03; color: var(--text-main); margin-botto
 .social-hero a { color: var(--muted); font-size: 1.2rem; transition: transform 200ms var(--ease), color 200ms var(--ease); }
 .social-hero a:hover { color: var(--accent-1); transform: translateY(-4px); }
 
-/* Hero image */
-.hero-img-box img { width: 100%; max-width: 380px; border-radius: 18px; box-shadow: 0 18px 60px rgba(2,6,23,0.6); border: 1px solid rgba(255,255,255,0.06); display:block; margin: 0 auto; }
+/* HERO PHOTO: improved appearance */
+.hero-img-box {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+}
+.profile-photo {
+    width: 330px;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 50%;                       /* circular crop */
+    border: 6px solid rgba(255,255,255,0.04); /* thin ring */
+    box-shadow: 0 30px 70px rgba(2,6,23,0.6);
+    transition: transform 260ms var(--ease), box-shadow 260ms var(--ease);
+    display:block;
+}
+
+/* accent ring behind photo for depth */
+.hero-img-box::after {
+    content: "";
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, rgba(0,198,255,0.08), transparent 30%),
+                radial-gradient(circle at 70% 70%, rgba(122,40,203,0.06), transparent 30%);
+    z-index: -1;
+    transform: translateY(12px);
+}
+
+/* subtle hover on photo */
+.profile-photo:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 40px 90px rgba(2,6,23,0.65);
+}
 
 /* ========================
-   5. SECTIONS & CARDS
+   SECTIONS & CARDS
    ======================== */
 .section-title { text-align:center; font-size: 1.9rem; margin-bottom: 20px; color: var(--text-main); }
 .grid { display:grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); }
@@ -126,15 +158,19 @@ h1 { font-size: 2.8rem; line-height: 1.03; color: var(--text-main); margin-botto
 .wide-card { grid-column: 1 / -1; }
 
 /* ========================
-   6. SKILLS & TAGS
+   SKILLS layout tuning (better alignment & logos)
    ======================== */
-.skills-wrapper { display:flex; gap: 24px; flex-wrap: wrap; justify-content:center; }
+.skills-wrapper { display:flex; gap: 24px; flex-wrap: wrap; justify-content:center; align-items:flex-start; }
+.skill-category { min-width: 280px; }
 .skill-category h3 { color: var(--accent-1); margin-bottom: 12px; font-size: 1rem; display:flex; align-items:center; gap:8px; }
 .tags { display:flex; flex-wrap:wrap; gap:10px; }
+.tech-tags { align-items: center; }
+
+/* skill pill */
 .skill {
     display:inline-flex;
     align-items:center;
-    gap:8px;
+    gap:10px;
     background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));
     border: 1px solid rgba(255,255,255,0.03);
     padding: 8px 12px;
@@ -143,12 +179,14 @@ h1 { font-size: 2.8rem; line-height: 1.03; color: var(--text-main); margin-botto
     font-weight: 600;
     transition: transform 220ms var(--ease), background 220ms var(--ease), color 220ms var(--ease);
     font-size: 0.95rem;
+    min-width: 120px;          /* makes pills align nicely */
+    justify-content: center;   /* center icon + text inside pill */
 }
 .skill i { font-size: 1rem; color: var(--accent-1); }
 .skill:hover { transform: translateY(-4px); background: linear-gradient(90deg, rgba(0,198,255,0.08), rgba(122,40,203,0.06)); color: #fff; }
 
 /* ========================
-   7. PROJECTS
+   PROJECTS / EXPERIENCE / CONTACT (unchanged layout)
    ======================== */
 .project-header { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:8px; }
 .tech-stack-line { color: rgba(161,140,209,0.9); font-weight:600; margin-top:6px; }
@@ -156,40 +194,23 @@ h1 { font-size: 2.8rem; line-height: 1.03; color: var(--text-main); margin-botto
 .project-actions { margin-top: 12px; }
 .btn-primary-small { padding: 8px 16px; border-radius: 999px; background: linear-gradient(90deg, var(--accent-1), var(--accent-2)); color: #fff; font-weight:700; text-decoration:none; display:inline-flex; align-items:center; gap:8px; }
 
-/* ========================
-   8. EXPERIENCE
-   ======================== */
 .exp-header { display:flex; justify-content:space-between; gap: 12px; align-items:flex-start; flex-wrap:wrap; }
 .company { color: var(--accent-1); font-weight:600; }
 .date { color: var(--muted); }
 
-/* ========================
-   9. CONTACT FORM
-   ======================== */
 .center-col { display:flex; flex-direction:column; align-items:center; }
 .glass-form { width:100%; max-width: 640px; padding: 26px; display:flex; flex-direction:column; gap: 12px; border-radius: 12px; background: linear-gradient(180deg, rgba(255,255,255,0.015), rgba(255,255,255,0.01)); border: 1px solid rgba(255,255,255,0.03); }
-input, textarea {
-    background: rgba(255,255,255,0.02);
-    border: 1px solid rgba(255,255,255,0.04);
-    color: var(--text-main);
-    padding: 12px 14px;
-    border-radius: 10px;
-    font-size: 1rem;
-}
+input, textarea { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.04); color: var(--text-main); padding: 12px 14px; border-radius: 10px; font-size: 1rem; }
 input:focus, textarea:focus { outline: none; border-color: rgba(0,198,255,0.6); box-shadow: 0 8px 20px rgba(0,198,255,0.06); }
 .full-width { width: 100%; }
-
-/* contact footer */
 .contact-footer a { color: var(--muted); text-decoration:none; font-weight:600; }
 .contact-footer a:hover { color: var(--accent-1); }
 
-/* ========================
-   10. FOOTER
-   ======================== */
+/* footer */
 footer { border-top: 1px solid rgba(255,255,255,0.03); color: var(--muted); }
 
 /* ========================
-   11. RESPONSIVE
+   RESPONSIVE
    ======================== */
 @media (max-width: 900px) {
     .hero-content { grid-template-columns: 1fr; text-align:center; gap: 26px; }
@@ -199,6 +220,11 @@ footer { border-top: 1px solid rgba(255,255,255,0.03); color: var(--muted); }
     .nav-links.open { right: 0; }
     .nav-links a { padding: 12px 10px; display:block; border-radius: 10px; color: var(--muted); font-size: 1rem; }
     .btn-nav { display: none; }
+
+    /* ensure photo scales well */
+    .profile-photo { width: 260px; height: 260px; }
+    .hero-img-box::after { width: 310px; height: 310px; transform: translateY(10px); }
+    .skill { min-width: 110px; }
 }
 
 @media (max-width: 480px) {
