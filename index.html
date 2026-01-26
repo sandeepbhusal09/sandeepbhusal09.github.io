@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sandeep Bhusal | Machine Learning Engineer</title>
+    <meta name="description" content="Sandeep Bhusal - Computer Engineering Portfolio">
+    <title>Sandeep Bhusal | Data Science & ML</title>
     
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     
@@ -13,141 +14,212 @@
 </head>
 <body>
 
-    <div class="scanline"></div>
-
-    <nav>
-        <div class="container nav-content">
-            <div class="logo">SANDEEP_BHUSAL<span class="cursor">_</span></div>
-            <div class="nav-links">
-                <a href="#about">// ABOUT</a>
-                <a href="#projects">// WORK</a>
-                <a href="#expertise">// SKILLS</a>
-                <a href="resume/Sandeep_Bhusal_Resume.pdf" class="nav-btn">GET_RESUME</a>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="nav-logo">S.BHUSAL<span class="dot"></span></a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link nav-btn">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </div>
     </nav>
 
-    <header id="about" class="hero container">
-        <div class="hero-grid">
-            <div class="hero-main">
-                <div class="top-tag">EST. 2022 | COMPUTER ENGINEERING</div>
-                <h1>Engineering <span class="gradient">Intelligence</span> from raw data.</h1>
-                <p class="hero-p">
-                    Undergraduate at Advanced College of Engineering specializing in 
-                    <strong>Deep Learning</strong> and <strong>Semantic Analysis</strong>. 
-                    Currently interned at the Load Dispatch Centre, focusing on industrial system monitoring.
+    <header id="home" class="hero-section">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <span class="hero-tag">Computer Engineering Undergraduate</span>
+                <h1 class="hero-title">I'm <span class="highlight">Sandeep</span> <br>Bhusal.</h1>
+                <p class="hero-text">
+                    I build intelligent systems using data. Currently specializing in 
+                    <strong>Natural Language Processing</strong> and <strong>Deep Learning</strong> 
+                    architectures to solve complex semantic problems.
                 </p>
-                <div class="hero-cta">
-                    <a href="#projects" class="primary-btn">VIEW_PROJECTS</a>
-                    <div class="social-links">
-                        <a href="https://github.com/sandeepbhusal09" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/sandeep-bhusal-360a72241/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    </div>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="resume/Sandeep_Bhusal_Resume.pdf" class="btn btn-secondary">Download CV</a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://github.com/sandeepbhusal09" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/sandeep-bhusal-360a72241/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://x.com/Sandeep64753819" target="_blank"><i class="fab fa-x-twitter"></i></a>
                 </div>
             </div>
-            <div class="hero-sidebar">
-                <div class="data-card">
-                    <div class="card-head">SYSTEM_STATUS</div>
-                    <div class="card-body">
-                        <div class="status-row"><span>LOCATION:</span> <span>KATHMANDU, NP</span></div>
-                        <div class="status-row"><span>FOCUS:</span> <span>ML / DATA SCIENCE</span></div>
-                        <div class="status-row"><span>STATUS:</span> <span class="active">ACTIVE</span></div>
-                    </div>
+            <div class="hero-image-container">
+                <div class="image-wrapper">
+                    <img src="images/profile.JPG" alt="Sandeep Bhusal">
                 </div>
+                <div class="image-bg-blur"></div>
             </div>
         </div>
     </header>
 
-    <section id="projects" class="container">
-        <h2 class="section-title">01. RESEARCH_CASE_STUDY</h2>
-        <div class="project-wrap">
-            <div class="project-header">
-                <div class="p-title">
-                    <h3>Duplicate Question Pair Detection</h3>
-                    <p>Semantic similarity engine via Manhattan LSTM</p>
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="sub-heading">Introduction</span>
+                <h2 class="main-heading">About Me</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I am a dedicated Computer Engineering student at <strong>Advanced College of Engineering and Management (IOE)</strong>. My passion lies in transforming raw data into actionable intelligence.</p>
+                    <p>My journey in tech is fueled by a curiosity for how Machine Learning can optimize industrial systems. Whether it's detecting semantic redundancy in text or monitoring power grid loads, I focus on precision and efficiency.</p>
                 </div>
-                <div class="p-tags">
-                    <span>KERAS</span><span>WORD2VEC</span><span>PYTHON</span>
+                <div class="about-stats">
+                    <div class="stat-box">
+                        <span class="stat-num">2026</span>
+                        <span class="stat-label">Batch</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-num">77%</span>
+                        <span class="stat-label">Model Accuracy</span>
+                    </div>
                 </div>
             </div>
-            
-            <div class="project-body">
-                <div class="p-description">
-                    <p>Implemented a <strong>Siamese Manhattan LSTM (MaLSTM)</strong> architecture to solve the Quora Question Pairs challenge. By leveraging pre-trained word embeddings and LSTMs, the model computes the semantic distance between inputs.</p>
-                    <ul class="p-list">
-                        <li>Achieved ~77% accuracy in semantic duplication detection.</li>
-                        <li>Utilized Manhattan distance (L1 norm) for similarity scoring.</li>
-                        <li>Engineered data pipelines for high-dimensional word embeddings.</li>
-                    </ul>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="sub-heading">Featured Research</span>
+                <h2 class="main-heading">Selected Projects</h2>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img-box">
                     
-                    <a href="https://github.com/sandeepbhusal09" class="p-link">VIEW_SOURCE_CODE</a>
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Natural Language Processing</span>
+                    <h3>Duplicate Question Pair Detection</h3>
+                    <p>Developed a semantic similarity system to identify duplicate questions using the Quora Question Pairs dataset. I implemented a <strong>Siamese Manhattan LSTM (MaLSTM)</strong> architecture.</p>
+                    <div class="project-details">
+                        <p>Unlike traditional cosine similarity, the MaLSTM uses the <strong>Manhattan distance (L1 norm)</strong> between the final hidden states of two weight-sharing LSTMs to compute semantic proximity.</p>
+                    </div>
+                    <div class="tech-pills">
+                        <span>Python</span>
+                        <span>Keras</span>
+                        <span>Word2Vec</span>
+                        <span>LSTM</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/sandeepbhusal09" target="_blank" class="link-btn">Source Code <i class="fas fa-external-link-alt"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="expertise" class="container">
-        <h2 class="section-title">02. TECHNICAL_STACK</h2>
-        <div class="skills-grid">
-            <div class="skill-box">
-                <h4>PROGRAMMING</h4>
-                <p>Python (Advanced), C, C++, MySQL, HTML5, CSS3</p>
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="sub-heading">Competencies</span>
+                <h2 class="main-heading">Technical Stack</h2>
             </div>
-            <div class="skill-box">
-                <h4>AI & DATA</h4>
-                <p>Deep Learning, NLP, Keras, Semantic Analysis, Word Embeddings</p>
-            </div>
-            <div class="skill-box">
-                <h4>CORE_COMPETENCIES</h4>
-                <p>System Analysis, Data Monitoring, Leadership, Creative Problem Solving</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="experience" class="container">
-        <h2 class="section-title">03. TIMELINE</h2>
-        <div class="exp-table">
-            <div class="exp-row">
-                <div class="exp-date">2024 - NOW</div>
-                <div class="exp-content">
-                    <h4>Load Dispatch Centre (LDC)</h4>
-                    <p>Intern // Industrial data monitoring and system analysis at Syuchatar, Kathmandu.</p>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h4>Languages</h4>
+                    <p>Python (Advanced), C, C++, SQL, HTML5, CSS3</p>
                 </div>
-            </div>
-            <div class="exp-row">
-                <div class="exp-date">2022 - 2026</div>
-                <div class="exp-content">
-                    <h4>Advanced College of Engineering (IOE)</h4>
-                    <p>Bachelor in Computer Engineering // Focus on Algorithms and Data Science.</p>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                    <h4>AI / ML</h4>
+                    <p>Deep Learning, NLP, Semantic Analysis, Keras, TensorFlow</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <h4>Engineering</h4>
+                    <p>System Analysis, Data Monitoring, MySQL, Operational Workflows</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-users"></i></div>
+                    <h4>Soft Skills</h4>
+                    <p>Technical Leadership, Creative Problem Solving, Collaboration</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="container">
-        <div class="contact-box">
-            <h2>HAVE_A_PROJECT?</h2>
-            <p>I am available for collaboration in Data Science and ML Engineering.</p>
-            
-            <form action="https://formspree.io/f/mkoojyyq" method="POST" class="c-form">
-                <div class="f-row">
-                    <input type="text" name="name" placeholder="IDENTIFIER (NAME)" required>
-                    <input type="email" name="email" placeholder="EMAIL_ADDRESS" required>
+    <section id="experience" class="timeline-section">
+        <div class="container timeline-grid">
+            <div class="timeline-column">
+                <h3 class="timeline-title">Work Experience</h3>
+                <div class="timeline-container">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Dec 2024 - Present</div>
+                        <div class="timeline-content">
+                            <h4>Intern</h4>
+                            <p class="company">Load Dispatch Centre (LDC)</p>
+                            <p>Gaining exposure to industry-level operational workflows and data monitoring systems at Syuchatar.</p>
+                        </div>
+                    </div>
                 </div>
-                <textarea name="message" rows="5" placeholder="TRANSMIT_MESSAGE..." required></textarea>
-                <button type="submit">EXECUTE_SEND</button>
-            </form>
-            
-            <div class="c-footer">
-                <a href="mailto:sandeepbhusal09@gmail.com">sandeepbhusal09@gmail.com</a>
+            </div>
+            <div class="timeline-column">
+                <h3 class="timeline-title">Education</h3>
+                <div class="timeline-container">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2022 - 2026</div>
+                        <div class="timeline-content">
+                            <h4>B.E. Computer Engineering</h4>
+                            <p class="company">Advanced College of Engineering (IOE)</p>
+                            <p>Focusing on advanced algorithms, data structures, and machine learning research.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2021</div>
+                        <div class="timeline-content">
+                            <h4>SLC / +2 Science</h4>
+                            <p class="company">Kathmandu Model Secondary School (KMC)</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <div class="container footer-content">
-            <p>DESIGNED_BY_SANDEEP_BHUSAL // 2025</p>
-            <div class="f-socials">
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-card">
+                <div class="contact-info">
+                    <h2>Let's talk about <br><span class="highlight">your next project.</span></h2>
+                    <p>I am always open to discussing data science internships, research collaborations, or ML opportunities.</p>
+                    <div class="contact-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:sandeepbhusal09@gmail.com">sandeepbhusal09@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+                <form action="https://formspree.io/f/mkoojyyq" method="POST" class="contact-form">
+                    <div class="form-row">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                    </div>
+                    <textarea name="message" rows="5" placeholder="Message" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-box">
+            <p class="copyright">© 2026 Sandeep Bhusal. Built with Code & Data.</p>
+            <div class="footer-social">
                 <a href="https://github.com/sandeepbhusal09">GH</a>
                 <a href="https://www.linkedin.com/in/sandeep-bhusal-360a72241/">LI</a>
                 <a href="https://x.com/Sandeep64753819">TW</a>
@@ -155,5 +227,6 @@
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
